@@ -15,5 +15,48 @@ html {
 /*---------Global Styles--------*/
 
 body{
-    background-color: ;
+    font-family:"Montserrat", sans-serif;
 }
+
+header.primary{
+  background-color: #3B638B;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+  color: #ffffff;
+/*Single value short hand*/
+  padding-top: 40px;
+/*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+/*T,R,B,L*/
+  padding: 20px 40px 20px 40px;
+/*Two Value Top/Bottom / L/R*/
+  padding:20px 40px;
+}
+
+header.primary h1{
+  font-size: 2.4rem;
+  margin: 20px 0 0 0;
+}
+
+header.primary h1 a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header.primary h2{
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin: 10px 0 0 0;
+}
+
+header.primary nav ul{
+  padding:0;
+}
+
+header.primary nav ul li{
+  list-style-type: none;
+}
+
