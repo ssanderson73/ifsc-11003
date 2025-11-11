@@ -7,3 +7,21 @@
 */
 
 /* ---------------Box Sizing----------------- */
+
+
+
+
+
+/*----------------Global Styles--------------*/
+body{
+    background-color: #312224;
+}
+header.primary{
+    background-color: black;
+    text-align:center;
+    color: #d99923;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
