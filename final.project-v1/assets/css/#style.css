@@ -4,9 +4,30 @@
 #812410
 #8C7474
 #312224
+#000000
+#ffffff
+
 */
 
 /* ---------------Box Sizing----------------- */
+
+html{
+    box-sizing: border-box;
+}
+*,
+*:before
+*:after {
+    box-sizing: inherit;
+}
+
+/*------------Responsive Images--------------*/
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------Utility Styles---------------*/
 
 
 
@@ -15,6 +36,7 @@
 /*----------------Global Styles--------------*/
 body{
     font-family: "Merriweather";
+    margin: 0;
 }
 header.primary{
     background-color: black;
