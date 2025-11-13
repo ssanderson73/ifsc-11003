@@ -6,7 +6,9 @@
 #312224
 #000000
 #ffffff
-
+#271D20
+#221F22
+#1A171A
 */
 
 /* ---------------Box Sizing----------------- */
@@ -37,13 +39,85 @@ img{
 body{
     font-family: "Merriweather";
     margin: 0;
+    color: #ffffff;
+    background-color: #1A171A;
 }
 header.primary{
-    background-color: black;
+    background-color: #221F22;
     text-align:center;
     color: #d99923;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 6em 2em;
+    position: relative;
+}
+
+header.primary h1{
+  text-shadow: 3px 3px #000000;
+  font-size: 3.4rem;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+header.primary h1 a{
+  color: #d99923;
+  text-decoration: none;
+}
+
+header.primary h2{
+  text-shadow: 3px 3px #000000;
+  color: #F2C36B;
+  font-size: 1.4rem;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited{
+  color: #221F22;
+  text-decoration: none;
+  background-color: #F2C36B;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover, 
+header.primary nav a:active {
+  background-color: #D99923;
+}
+
+
+/*------------Media Queries----------------*/
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+header.priamry nav ul li {
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+header.primary nav ul li a {
+  display: block;
 }
