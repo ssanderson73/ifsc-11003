@@ -121,3 +121,26 @@ header.priamry nav ul li {
 header.primary nav ul li a {
   display: block;
 }
+
+
+
+
+
+/*-------------Paladia Page--------------*/
+
+aside table {
+  border: 1px solid #F2C36B;
+  border-collapse: collapse;
+}
+
+aside table th {
+  border: 1px solid #F2C36B;
+  border-collapse: collapse;
+}
+
+aside table td {
+  border: 1px solid #F2C36B;
+  
+}
+
+
