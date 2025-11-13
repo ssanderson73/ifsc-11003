@@ -102,7 +102,13 @@ header.primary nav a:active {
   background-color: #D99923;
 }
 
+#intro h2 {
+  text-align: center;
+}
 
+#intro p {
+  text-align: center;
+}
 /*------------Media Queries----------------*/
 
 @media screen and (max-width: 600px) {
@@ -128,19 +134,49 @@ header.primary nav ul li a {
 
 /*-------------Paladia Page--------------*/
 
+
+
+
+#key h3 {
+  color: #8C7474;
+}
+#key dt{
+  color: #8C7474;
+  font-weight: bold;
+}
+dd + dt {
+  margin-left: 20px;
+}
+#key dd {
+  color: #8C7474;
+}
+
+
 aside table {
-  border: 1px solid #F2C36B;
+  background-color: #F2C36B;
+  border: 1px solid #1A171A;
   border-collapse: collapse;
 }
 
+table header {
+  color: #ffffff;
+}
+
 aside table th {
-  border: 1px solid #F2C36B;
+  color: #1A171A;
+  text-align: center;
+  border: 1px solid #1A171A;
   border-collapse: collapse;
 }
 
 aside table td {
-  border: 1px solid #F2C36B;
+  color: #1A171A;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #221F22;
   
 }
+
+
 
 
