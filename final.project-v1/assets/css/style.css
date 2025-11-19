@@ -4,6 +4,7 @@
 #812410
 #8C7474
 #312224
+#AE9597
 #000000
 #ffffff
 #271D20
@@ -39,8 +40,10 @@ img{
 body{
     font-family: "Merriweather";
     margin: 0;
+    letter-spacing: 1px;
+    word-spacing: 1px;
     color: #ffffff;
-    background-color: #1A171A;
+    background-color: #221F22;
 }
 header.primary{
     background-color: #221F22;
@@ -48,6 +51,18 @@ header.primary{
     color: #d99923;
     padding: 6em 2em;
     position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https://substack-post-media.s3.amazonaws.com/public/images/148ae4c1-f8ca-4e31-b509-f3e6a16c4402_2560x1087.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
 }
 
 header.primary h1{
@@ -109,6 +124,97 @@ header.primary nav a:active {
 #intro p {
   text-align: center;
 }
+
+footer {
+  background-color: #000000;
+}
+
+footer h6{
+  padding: 20px;
+  margin: 0;
+  color: #8C7474;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+footer h6 a:link, footer h6 a:visited, footer p{
+  color: #8C7474;
+  text-align: center;
+}
+
+figcaption{
+  text-transform: uppercase;
+  font-size: .6rem;
+  text-align: center;
+}
+
+/*------------Index Page------------------*/
+
+div.bookcover{
+  display: flex;
+  justify-content: center;
+}
+
+aside{
+  background-color: #8C7474;
+  color: #1A171A;
+  padding: 20px 0;
+}
+
+aside h2{
+  text-align: center;
+}
+
+aside .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px 40px;
+}
+ aside ul{
+  list-style: none;
+}
+
+
+
+
+#plotsummary h2{
+  color: #AE9597;
+  text-align: center;
+  padding: 10px;
+}
+#plotsummary p{
+  color: #AE9597;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+#aboutsenlinyu{
+  padding: 2.5em;
+  background-color: #1A171A;
+  color: #8C7474;
+}
+#aboutsenlinyu.container h2{
+  text-align: center;
+}
+#aboutsenlinyu.container img{
+  display: block;
+  margin: auto;
+}
+#aboutsenlinyu.container p{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+
+
 /*------------Media Queries----------------*/
 
 @media screen and (max-width: 600px) {
@@ -137,6 +243,7 @@ header.primary nav ul li a {
 
 
 
+
 #key h3 {
   color: #8C7474;
 }
@@ -150,6 +257,8 @@ dd + dt {
 #key dd {
   color: #8C7474;
 }
+
+
 
 
 aside table {
@@ -177,6 +286,109 @@ aside table td {
   
 }
 
+/*------------Characters Page---------------*/
+#intro.container h2{
+  color: #AE9597;
+}
+#content h2{
+  text-align: center;
+}
+section #content{
+  background-color: #1A171A;
+}
+#content.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1em 1em 1em;
+}
+
+#content h3{
+  flex: 0 0 100%;
+  color: #1A171A;
+  text-align: center;
+  font-size: 2em;
+}
+#content h4{
+  flex: 0 0 100%;
+  color: #1A171A;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#content .post{
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #1A171A;
+  border-radius: 5px;
+  background: #AE9597;
+}
+
+#content ul{
+  padding: 0 20px;
+}
+
+#content li{
+  margin-bottom: 20px;
+}
+
+section #secondary{
+padding: 0 0 4em 0;
+}
+
+#secondary{
+  color: #AE9597;
+}
+
+#secondary h2{
+  text-align: center;
+}
+
+#secondary table{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+#secondary tr{
+  border-bottom: 1px solid #AE9597;
+}
+#secondary th{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#secondary td{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 10px;
+}
 
 
 
+#themes{
+  background-color: #1A171A;
+  padding: 30px;
+}
+
+#themes h2{
+  color: #AE9597;
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+}
+
+#themes h3{
+  color: #AE9597;
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+}
+
+#themes p{
+  color: #8C7474;
+  text-align: center;
+  font-size: .9rem;
+}
