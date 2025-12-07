@@ -1,0 +1,441 @@
+/* Color Theme
+#D99923
+#F2C36B
+#812410
+#8C7474
+#312224
+#AE9597
+#000000
+#ffffff
+#271D20
+#221F22
+#1A171A
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html{
+    box-sizing: border-box;
+}
+*,
+*:before
+*:after {
+    box-sizing: inherit;
+}
+
+/*------------Responsive Images--------------*/
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------Utility Styles---------------*/
+
+
+
+
+
+/*----------------Global Styles--------------*/
+body{
+    font-family: "Raleway";
+    margin: 0;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #ffffff;
+    background-color: #221F22;
+}
+header.primary{
+    background-color: #221F22;
+    text-align:center;
+    color: #d99923;
+    padding: 6em 2em;
+    position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https://substack-post-media.s3.amazonaws.com/public/images/148ae4c1-f8ca-4e31-b509-f3e6a16c4402_2560x1087.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1{
+  text-shadow: 3px 3px #000000;
+  font-size: 3.4rem;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+header.primary h1 a{
+  color: #d99923;
+  text-decoration: none;
+}
+
+header.primary h2{
+  text-shadow: 3px 3px #000000;
+  color: #F2C36B;
+  font-size: 1.4rem;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited{
+  color: #221F22;
+  text-decoration: none;
+  background-color: #F2C36B;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover, 
+header.primary nav a:active {
+  background-color: #D99923;
+}
+
+#intro h2 {
+  text-align: center;
+}
+
+#intro p {
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+}
+
+footer h6{
+  padding: 20px;
+  margin: 0;
+  color: #8C7474;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+footer h6 a:link, footer h6 a:visited, footer p{
+  color: #8C7474;
+  text-align: center;
+}
+
+figcaption{
+  text-transform: uppercase;
+  font-size: .6rem;
+  text-align: center;
+}
+
+/*------------Index Page------------------*/
+
+section#opener{
+  display: flex;
+  justify-content: center;
+}
+
+div.book{
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+}
+
+aside.block{
+  background-color: #221F22;
+}
+
+div.quote{
+  display: inline-block;
+  margin: 1em; 
+  max-width: 20em;
+  max-height: 15em;
+  blockquote{
+    color: #8C7474;
+    border: solid 1em #8C7474;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    &::before{
+      background-color: #221F22;
+      bottom: -1em;
+      content: "";
+      left: 2em;
+      position: absolute;
+      right: 2em;
+      top: -1em;
+    }
+    cite {
+      color: #8C7474;
+      display: block;
+      font-size: small;
+      font-style: normal;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    >* {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+
+aside{
+  background-color: #8C7474;
+  color: #1A171A;
+  padding: 20px 0;
+}
+
+aside h2{
+  text-align: center;
+}
+
+aside .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px 40px;
+}
+ aside ul{
+  list-style: none;
+}
+
+
+
+
+#plotsummary h2{
+  color: #AE9597;
+  text-align: center;
+  padding: 10px;
+}
+#plotsummary p{
+  color: #AE9597;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+
+#aboutsenlinyu{
+  padding: 2.5em;
+  background-color: #1A171A;
+  color: #8C7474;
+}
+#aboutsenlinyu.container h2{
+  text-align: center;
+}
+#aboutsenlinyu.container img{
+  display: block;
+  margin: auto;
+}
+#aboutsenlinyu.container p{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+
+
+/*------------Media Queries----------------*/
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+header.priamry nav ul li {
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+header.primary nav ul li a {
+  display: block;
+}
+
+
+
+
+
+/*-------------Paladia Page--------------*/
+
+
+
+
+
+#key h3 {
+  color: #8C7474;
+}
+#key dt{
+  color: #8C7474;
+  font-weight: bold;
+}
+dd + dt {
+  margin-left: 20px;
+}
+#key dd {
+  color: #8C7474;
+}
+
+
+
+
+aside table {
+  background-color: #F2C36B;
+  border: 1px solid #1A171A;
+  border-collapse: collapse;
+}
+
+table header {
+  color: #ffffff;
+}
+
+aside table th {
+  color: #1A171A;
+  text-align: center;
+  border: 1px solid #1A171A;
+  border-collapse: collapse;
+}
+
+aside table td {
+  color: #1A171A;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #221F22;
+  
+}
+
+/*------------Characters Page---------------*/
+#intro.container h2{
+  color: #AE9597;
+}
+#content h2{
+  text-align: center;
+}
+section #content{
+  background-color: #1A171A;
+}
+#content.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1em 1em 1em;
+}
+
+#content h3{
+  flex: 0 0 100%;
+  color: #1A171A;
+  text-align: center;
+  font-size: 2em;
+}
+#content h4{
+  flex: 0 0 100%;
+  color: #1A171A;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#content .post{
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #1A171A;
+  border-radius: 5px;
+  background: #AE9597;
+}
+
+#content ul{
+  padding: 0 20px;
+}
+
+#content li{
+  margin-bottom: 20px;
+}
+
+section #secondary{
+padding: 0 0 4em 0;
+}
+
+#secondary{
+  color: #AE9597;
+}
+
+#secondary h2{
+  text-align: center;
+}
+
+#secondary table{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+#secondary tr{
+  border-bottom: 1px solid #AE9597;
+}
+#secondary th{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#secondary td{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+
+
+#themes{
+  background-color: #1A171A;
+  padding: 30px;
+}
+
+#themes h2{
+  color: #AE9597;
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+}
+
+#themes h3{
+  color: #AE9597;
+  text-align: center;
+  text-shadow: 3px 3px #000000;
+}
+
+#themes p{
+  color: #8C7474;
+  text-align: center;
+  font-size: .9rem;
+}
