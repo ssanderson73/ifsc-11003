@@ -12,3 +12,12 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+
+function highlightItem(elemment) {
+    elemment.classList.add("highlight");
+}
+
+function removeHighlight(elemment) {
+    elemment.classList.remove("highlight")
+}

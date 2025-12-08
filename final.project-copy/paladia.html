@@ -7,7 +7,7 @@
   <meta name="author" content="Sophia Anderson">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -38,43 +38,47 @@
             <header>
                 <time class="post-date" datetime="2025-11-13">November 13, 2025</time>
                 <figure>
-                    <img src="assets/img/map.paladia.webp" alt="Map of Paladia" width="80%">
+                    <img src="assets/img/map.paladia.webp" alt="Map of Paladia" width="900" height="683" usemap="#workmap">
                     <figcaption>Map of Paladia</figcaption>
                 </figure>
-                <h3>Map Key</h3>
-            </header>
-            <dl>
-                <dt>I.</dt> 
-                <dd>Alchemy Institute</dd>
-               <dt>II.</dt> 
-               <dd>Solis Splendour</dd>
-               <dt>III.</dt> 
-               <dd>Bomb site</dd>
-               <dt>IV.</dt>
-               <dd>East Port</dd>
-               <dt>V.</dt> 
-               <dd>Hydroelectric Dam</dd>
-               <dt>VI.</dt>
-               <dd>Factory Outpost</dd>
-               <dt>VII.</dt>
-               <dd>Kaine's Suite</dd>
-               <dt>VIII.</dt>
-               <dd>Hevgotian Ambassador's Suite</dd>
-               <dt>IX.</dt>
-               <dd>Flood Cathedral Access Point</dd>
-               <dt>X.</dt>
-               <dd>West Port Lab</dd>
-               <dt>XI.</dt>
-               <dd>West Port</dd>
-               <dt>XII.</dt>
-               <dd>Spirefell</dd>
-               <dt>XIII.</dt>
-               <dd>Wetlands Flood Zone</dd>
-               <dt>XIV.</dt>
-               <dd>Novis Mountains</dd>
-               <dt>XV.</dt>
-               <dd>Flood Gate</dd>
-            </dl>
+                <map name="workmap">
+                    <area shape="rect" coords="365,183,408,254" alt="I" href="/assets/css/style.css">
+                    <area shape="rect" coords="310,170,345,210" alt="II">
+                    <area shape="rect" coords="371,364,422,402" alt="III">
+                    <area shape="rect" coords="510,583,590,628" alt="IV">
+                    <area shape="rect" coords="383,61,510,134" alt="V">
+                    <area shape="rect" coords="547,105,652,190" alt="VI">
+                    <area shape="rect" coords="185,246,222,280" alt="VII">
+                    <area shape="rect" coords="184,377,213,407" alt="VIII">
+                    <area shape="rect" coords="247,361,292,396" alt="IX">
+                    <area shape="rect" coords="239,521,290,564" alt="X">
+                    <area shape="rect" coords="299,543,348,578" alt="XI">
+                    <area shape="rect" coords="74,58,221,180" alt="XII">
+                    <area shape="rect" coords="243,99,339,162" alt="XIII">
+                    <area shape="rect" coords="643,30,741,101" alt="XIV">
+                    <area shape="rect" coords="226,187,265,236" alt="XV">
+                </map>
+                </header>
+        <div class="key">
+            <ul>
+            <h3>Map Key</h3>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)"><span>Alchemy Institute</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">II.<span>Solis Splendour</span></li> 
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">III.<span>Bomb site</span></li> 
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">IV.<span>East Port</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">V.<span>Hydroelectric Dam</span></li> 
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">VI.<span>Factory Outpost</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">VII.<span>Kaine's Suite</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">VIII.<span>Hevgotian Ambassador's Suite</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">IX.<span>Flood Cathedral Access Point</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">X.<span>West Port Lab</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XI.<span>West Port</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XII.<span>Spirefell</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XIII.<span>Wetlands Flood Zone</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XIV.<span>Novis Mountains</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XV.<span>Flood Gate</span></li>
+            </ul>
+        </div>
         </article>
     </section id="content" class="container">
     <aside role="contentinfo">
@@ -162,4 +166,5 @@
         <h6>2025 Sophia Anderson | <a href="mailto:ssanderson@ualr.edu"> Report a Probelm</a> | </h6>
         <p>This website was created as a student project for educatioinal purposes. Alchemised and SenLinYu are not affilated with or endorsing this work.</p>
     </footer>
+    <script src="assets/js/scripts.js"></script>
 </body>
