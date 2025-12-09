@@ -554,13 +554,42 @@ header.mapH{
 }
 
 
-#hop.php{
+#hop.ph{
   padding: 10px;
   background-color: #1A171A;
   color: #AE9597;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-#hop-header{
-  height: 20px;
-  position: relative;
+header.ph{
+  grid-row: 1 / -1;
+  text-align: center;
+}
+
+.periods {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.p2{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.wholemap {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.Mapof img {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
 }
