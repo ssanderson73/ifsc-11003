@@ -33,11 +33,12 @@
         <p>Paladia sits in the central-western quadrant of the continent. This position allows Paladia to function as both a buffer and bridge between 
         the continent's extremes.</p>
     </section>
-    <section>
-        <article id="map" class="post">
-            <header>
+    <section id="mapP" class="wrapper">
+            <header class="mapH">
+                <h2>Map</h2>
+            </header>
                 <time class="post-date" datetime="2025-11-13">November 13, 2025</time>
-                <figure>
+                <figure class="pic">
                     <img src="assets/img/map.paladia.webp" alt="Map of Paladia" width="900" height="683" usemap="#workmap">
                     <figcaption>Map of Paladia</figcaption>
                 </figure>
@@ -58,11 +59,11 @@
                     <area shape="rect" coords="643,30,741,101" alt="XIV">
                     <area shape="rect" coords="226,187,265,236" alt="XV">
                 </map>
-                </header>
-        <div class="key">
+                
+        <div id="legend" class="key">
             <ul>
             <h3>Map Key</h3>
-                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)"><span>Alchemy Institute</span></li>
+                <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">I<span>Alchemy Institute</span></li>
                 <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">II.<span>Solis Splendour</span></li> 
                 <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">III.<span>Bomb site</span></li> 
                 <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">IV.<span>East Port</span></li>
@@ -79,88 +80,61 @@
                 <li onmouseover="hightlightItem(this)" onmouseout="removeHighlight(this)">XV.<span>Flood Gate</span></li>
             </ul>
         </div>
-        </article>
-    </section id="content" class="container">
-    <aside role="contentinfo">
-         <table>
-            <caption>History of Paladina</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Early History — Fragmented Origin</th>
-                    <th scope="col">The Unification Era — Rise of Central Authority</th>
-                    <th scope="col">The Alchemical Codification Period</th>
-                    <th scope="col">The Age of Prosperity</th>
-                    <th scope="col">Modern Era — The Era of Fragile Balance</th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Paladia did not begin as a unified nation. Its earliest form consisted of:</li>
-                                <ul>
-                                    <li>Independent river-city states</li>
-                                    <li>Mountain-mining clans</li>
-                                    <li>Coastal merchant leagues</li>
-                                    <li>Agricultural collectives</li>
-                                </ul>
-                            <li>These groups were frequently in conflict but unified in valuing predictability and resource management.</li>
-                            <li>This early fragmentation explains why Paladia later emphasizes order, law, and regulated alchemy</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>A key historical turning point came when several powerful leaders (scholars, alchemists, and strategists) pushed for centralization, arguing that:
-                                alchemy was too dangerous to remain unregulated, trade routes needed standardization, and magical instability from the east required a 
-                                unified defense</li>
-                            <li>The Treaty of the Radiant Spire is traditionally seen as the moment Paladia officially became one nation.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>What sets Paladia apart from other regions is how early it recognized the need to regulate magical sciences. This era saw:</li>
-                                <ul>
-                                    <li>The establishment of alchemical guild laws</li>
-                                    <li>The creation of standardized safety protocols</li>
-                                    <li>State-funded academies</li>
-                                    <li>Research into magical equilibrium</li>
-                                </ul>
-                            <li>Paladia's government framed alchemy as a public good, not a personal weapon or spiritual force.</li>
-                            <li>This created its modern identity-rational, bureaucratic, innovation-driven, and stability-obsessed</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>With reliable agriculture, coastal trade, and thriving scholarship, Paladia entered a long period of flourishing.</li>
-                            <li>During this time:roads and canals were constructed, cities expanded, international diplomacy increased, and alchemical 
-                                advancements spread continent-wide.</li>
-                            <li>Paladia’s influence grew to the point where it served as a continental mediator.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>By the time Alchemised begins, Paladia is still prosperous — but cracks are forming beneath the polished exterior.</li>
-                            <li>Increasing magical volatility across the continent, ideological splits between traditional alchemists and innovators, 
-                                rising tensions with less stable neighboring regions, and internal debates about the ethical boundaries of alchemical research</li>
-                            <li>Paladia remains functional and powerful, but its leadership knows that stability is an active, ongoing struggle, not a permanent achievement.</li>
-                            <li>This theme mirrors the story’s underlying message that alchemy creates possibility — but also imbalance. Maintaining balance is a continuous act of will.</li>
-                        </ul>
-                    </td>
-                </tr>
-        </table>
-    </aside>
-    <section>
-        <h2></h2>
     </section>
-
-    <section>
-        <figure>
+    <section id="hop" class="ph">
+    <div class="history">
+        <header><h2>History of Paladia</h2></header>
+        <div class="p1">
+            <h3>Early History- Fragmented Origin</h3>
+            <p>Paladia did not begin as a unified nation. Its earliest form consisted of:</p>
+                <ul>
+                    <li>Independent river-city states</li>
+                    <li>Mountain-mining clans</li>
+                    <li>Coastal merchant leagues</li>
+                    <li>Agricultural collectives</li>
+                </ul>
+            <p>These groups were frequently in conflict but unified in valuing predictability and resource management.</p>
+            <p>This early fragmentation explains why Paladia later emphasizes order, law, and regulated alchemy</p>
+        </div>
+        <div class="p2">
+            <h3>The Unification Era — Rise of Central Authority</h3>
+            <p>A key historical turning point came when several powerful leaders (scholars, alchemists, and strategists) pushed for centralization, arguing that:
+            alchemy was too dangerous to remain unregulated, trade routes needed standardization, and magical instability from the east required a 
+            unified defense.</p>
+            <p>The Treaty of the Radiant Spire is traditionally seen as the moment Paladia officially became one nation.</p>
+        </div>
+        <div class="p3">
+            <h3>The Alchemical Codification Period</h3>
+            <p>What sets Paladia apart from other regions is how early it recognized the need to regulate magical sciences. This era saw:</p>
+            <ul>
+               <li>The establishment of alchemical guild laws</li>
+                <li>The creation of standardized safety protocols</li>
+                <li>State-funded academies</li>
+                <li>Research into magical equilibrium</li> 
+            </ul>
+            <p>Paladia's government framed alchemy as a public good, not a personal weapon or spiritual force.</p>
+            <p>This created its modern identity-rational, bureaucratic, innovation-driven, and stability-obsessed.</p>
+        </div>
+        <div class="p4">
+            <h3>The Age of Prosperity</h3>
+            <p>With reliable agriculture, coastal trade, and thriving scholarship, Paladia entered a long period of flourishing.</p>
+            <p>During this time:roads and canals were constructed, cities expanded, international diplomacy increased, and alchemical 
+            advancements spread continent-wide.</p>
+            <p>Paladia's influence grew to the point where it served as a continental mediator.</p>
+        </div>
+        <div class="p5">
+            <h3>Modern Era — The Era of Fragile Balance</h3>
+            <p>By the time Alchemised begins, Paladia is still prosperous — but cracks are forming beneath the polished exterior.</p>
+            <p>Increasing magical volatility across the continent, ideological splits between traditional alchemists and innovators, 
+            rising tensions with less stable neighboring regions, and internal debates about the ethical boundaries of alchemical research.</p>
+            <p>Paladia remains functional and powerful, but its leadership knows that stability is an active, ongoing struggle, not a permanent achievement.</p>
+            <p>This theme mirrors the story's underlying message that alchemy creates possibility — but also imbalance. Maintaining balance is a continuous act of will.</p>
+        </div>
+    </div>
+        <figure class="wholemap">
             <img src="assets/img/map.known.world.webp" alt="Map of the Known World" width="80%">
             <figcaption>Map of the Known World</figcaption>
         </figure>
-        <h3>Map of the Known World</h3>
-        <p>Alchemised is a romance and fantasy novel by SenLinYu, the auther best known for the fanfiction Manacled. Like much of her work, 
-        Alchemised blands intense emotional themese, complex character dynamics, and a touch of the magical or mystical- rooted in deep 
-        physchilogical and philosophical understones.</p>
     </section>
      <footer id="colophon" role="contentinfo">
         <h6>2025 Sophia Anderson | <a href="mailto:ssanderson@ualr.edu"> Report a Probelm</a> | </h6>

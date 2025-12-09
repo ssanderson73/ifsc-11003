@@ -279,7 +279,23 @@ header.primary nav ul li a {
   display: block;
 }
 
-
+@media (max-width: 900px) {
+  #mapP.wrapper {
+    grid-template-columns: 1fr;
+  }
+  .pic{
+    grid-row: 1 / -1;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+  .key{
+    grid-row: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+}
+  
 
 
 
@@ -429,6 +445,44 @@ padding: 0 0 4em 0;
 /*-------------Paladia Page--------------*/
 
 
+#mapP.wrapper{
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  grid-auto-rows: auto 1fr; 
+  gap: 2rem; 
+  align-items: start; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header.mapH{
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.pic{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 100%;
+}
+
+.pic img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.key{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: start;
+}
+
+
+
+
 
 
 .highlight li{
@@ -437,24 +491,13 @@ padding: 0 0 4em 0;
 }
 
 
-div .key{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .key h3{
+  display: flex;
+  justify-content: center;
   color: #8C7474;
   font-weight: 700;
   margin-bottom: 10px;
-}
-
-div.key{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #221F22;
-  min-height: 50vh;
 }
 
 .key{
@@ -462,7 +505,7 @@ div.key{
 }
 
 .key ul{
-  border: 2px solid #ffffff;
+  border: 2px solid #8C7474;
   padding: 10px;
   border-radius: 10px;
   margin: 5px;
@@ -493,7 +536,7 @@ div.key{
 }
 
 .key ul li:hover span{
-  color: #ffffff;
+  color: #8C7474;
 }
 
 .key ul li:before{
@@ -501,39 +544,24 @@ div.key{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #1A171A;
   transform: scaleX(0);
   transform-origin: left;
   transition: 0.5s;
 }
 
-.key dd:hover:before{
+.key ul li:hover:before{
   transform: scaleX(1);
 }
 
 
-
-aside table {
-  background-color: #F2C36B;
-  border: 1px solid #1A171A;
-  border-collapse: collapse;
+#hop.php{
+  padding: 10px;
+  background-color: #1A171A;
+  color: #AE9597;
 }
 
-table header {
-  color: #ffffff;
-}
-
-aside table th {
-  color: #1A171A;
-  text-align: center;
-  border: 1px solid #1A171A;
-  border-collapse: collapse;
-}
-
-aside table td {
-  color: #1A171A;
-  text-align: center;
-  padding: 5px;
-  border: 1px solid #221F22;
-  
+#hop-header{
+  height: 20px;
+  position: relative;
 }
