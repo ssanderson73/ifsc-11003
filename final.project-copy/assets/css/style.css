@@ -467,7 +467,7 @@ header.mapH{
   width: 100%;
 }
 
-.pic img{
+#mapP .pic img{
   display: block;
   max-width: 100%;
   height: auto;
@@ -482,13 +482,12 @@ header.mapH{
 
 
 
-
-
-
-.highlight li{
-  background-color: #D99923;
-  border: 1px solid #D99923;
+.key li.highlight{
+  background-color: #F2C36B;
+  border-left-color: #F2C36B;
+  color: #ffffff;
 }
+
 
 
 
