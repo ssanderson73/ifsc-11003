@@ -155,7 +155,7 @@ figcaption{
   text-align: center;
 }
 
-a {
+#FAQ a {
   color: #1A171A;
   text-decoration: none;
   font-weight: bold;
@@ -746,6 +746,7 @@ header.ph{
 }
 
 span.q1{
+  display: block;
   background-color: #AE9597;
   text-decoration: underline;
   margin: 2px;
