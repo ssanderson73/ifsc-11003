@@ -18,7 +18,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
+/*------paladia page------*/
 //select all map areas
 const areas =document.querySelectorAll("map[name='workmap'] area");
 
@@ -36,3 +36,28 @@ areas.forEach(area => {
     if (li) li.classList.remove("highlight");
   });
 });
+
+
+/*-----faq page------*/
+
+
+var acc = document.getElementsByClassName("bfq");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var parent = this.parentElement;
+    var panel = this.nextElementSibling;
+    var mainPanel = document.querySelector(".qc1");
+    
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      // panel.style.border = "none";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      parent.style.maxHeight =
+        parseInt(parent.style.maxHeight) + panel.scrollHeight + "px";
+    }
+  });
+}
