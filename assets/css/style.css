@@ -1,5 +1,39 @@
 /*     Course Homepage CSS     */
+body{
+    font-family: "Open Sans", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    background-color: lightblue;
 
-body {
-background-color:aquamarine;
 }
+
+h1{
+    text-align: center;
+}
+
+nav ul {
+    background-color: #ececec;
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav li { 
+    background-color: #ececec;
+    padding: .6rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav li:hover {
+    background-color: lightpink;
+}
+
